@@ -90,7 +90,7 @@ of the challenge (applies only for top three ranked participants of the competit
 To enter the final ranking the participants will need to fill out a survey 
 (fact sheet) briefly describing their method. All the participants are also invited 
 (not mandatory) to submit a paper for peer-reviewing and publication at the 
-NTIRE Workshop and Challenges (to be held online on June, 2021). To be eligible for 
+NTIRE Workshop and Challenges (to be held on June, 2022). To be eligible for 
 prizes, the participants score must improve the baseline performance provided by the
 challenge organizers.
 
