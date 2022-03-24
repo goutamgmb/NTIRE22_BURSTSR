@@ -92,7 +92,7 @@ as 16 bit (uint16) png files. Please refer to [save_results_synburst_val.py](scr
 an example on how to save the results. An example submission file is available [here](https://data.vision.ee.ethz.ch/bhatg/syn_burst_example_submission_2022.zip).
 
 ### Final Submission
-The **test set** is now public. You can download the test set containing 92 synthetic bursts from [this link](https://data.vision.ee.ethz.ch/bhatg/track1_2022_test_set.zip). You can use the dataset class provided in [synthetic_burst_test_set.py](datasets/synthetic_burst_test_set.py) in the latest commit to load the burst sequences.
+The **test set** is now public. You can download the test set containing 92 synthetic bursts from [this link](https://data.vision.ee.ethz.ch/bhatg/synburst_test_2022.zip). You can use the dataset class provided in [synthetic_burst_test_set.py](datasets/synthetic_burst_test_set.py) in the latest commit to load the burst sequences.
 
 For the final submission, you need to submit:
 * The predicted outputs for each burst sequence as a zip folder, in the same format as used for uploading results to the codalab validation server (see [this](https://github.com/goutamgmb/NTIRE22_BURSTSR#validation) for details).
@@ -143,7 +143,7 @@ dataset for validating their methods.
 
 ### Final Submission
 The **test set** is now public. You can download the test set containing 20 real-world bursts from 
-[this link](https://data.vision.ee.ethz.ch/bhatg/track2_2022_test_set.zip). You can use the dataset class provided in 
+[this link](https://data.vision.ee.ethz.ch/bhatg/realworld_test_2022.zip). You can use the dataset class provided in 
 [realworld_burst_test_set.py](datasets/realworld_burst_test_set.py) in the latest commit to load the burst sequences.
 
 For the final submission, you need to submit:
