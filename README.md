@@ -25,11 +25,11 @@ NTIRE workshop at CVPR 2022
 ## Dates
 * 2022.01.31 Release of train and validation data  
 * 2022.02.01 Validation server online  
-* 2022.03.13 Final test data release (inputs only)  
-* 2022.03.20 Test output results submission deadline  
-* 2022.03.20 Fact sheets and code/executable submission deadline  
-* 2022.03.22 Preliminary test results released to the participants  
-* 2022.04.01 Paper submission deadline for entries from the challenge  
+* 2022.03.23 Final test data release (inputs only)  
+* 2022.03.30 Test output results submission deadline  
+* 2022.03.30 Fact sheets and code/executable submission deadline  
+* 2022.04.01 Preliminary test results released to the participants  
+* 2022.04.11 Paper submission deadline for entries from the challenge  
 * 2022.06.19 NTIRE workshop and challenges, results and award ceremony  
 
 
