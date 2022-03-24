@@ -92,7 +92,16 @@ as 16 bit (uint16) png files. Please refer to [save_results_synburst_val.py](scr
 an example on how to save the results. An example submission file is available [here](https://data.vision.ee.ethz.ch/bhatg/syn_burst_example_submission_2022.zip).
 
 ### Final Submission
-TBA
+The **test set** is now public. You can download the test set containing 92 synthetic bursts from [this link](https://data.vision.ee.ethz.ch/bhatg/track1_2022_test_set.zip). You can use the dataset class provided in [synthetic_burst_test_set.py](datasets/synthetic_burst_test_set.py) in the latest commit to load the burst sequences.
+
+For the final submission, you need to submit:
+* The predicted outputs for each burst sequence as a zip folder, in the same format as used for uploading results to the codalab validation server (see [this](https://github.com/goutamgmb/NTIRE22_BURSTSR#validation) for details).
+* The code and model files necessary to reproduce your results.
+* A factsheet (both PDF and tex files) describing your method. The template for the factsheet is available [here](https://data.vision.ee.ethz.ch/bhatg/NTIRE_BURSTSR_TEMPLATE.zip).  
+
+The results, code, and factsheet should be submitted via the [google form](https://docs.google.com/forms/d/e/1FAIpQLSduZNcb6M-e_ROEnATRJ7e58ChUrLgrQ7iSmS6ysoON3wHZqg/viewform?usp=sf_link)
+
+**NOTE:** Training on the validation split is **NOT** allowed for test set submissions.
 
 ## Track 2 - Real-world
 This track deals with the problem of real-world burst super-resolution. Methods will be evaluated on a test set containing 
@@ -133,8 +142,17 @@ dataset for validating their methods.
 
 
 ### Final Submission
+The **test set** is now public. You can download the test set containing 20 real-world bursts from 
+[this link](https://data.vision.ee.ethz.ch/bhatg/track2_2022_test_set.zip). You can use the dataset class provided in 
+[realworld_burst_test_set.py](datasets/realworld_burst_test_set.py) in the latest commit to load the burst sequences.
 
-TBA
+For the final submission, you need to submit:
+* The predicted outputs for each burst sequence as a zip folder, in the same format as used for uploading results to the codalab validation server (see [this](https://github.com/goutamgmb/NTIRE22_BURSTSR#validation) for details).
+* The code and model files necessary to reproduce your results.
+* A factsheet (both PDF and tex files) describing your method. The template for the factsheet is available [here](https://data.vision.ee.ethz.ch/bhatg/NTIRE_BURSTSR_TEMPLATE.zip).  
+
+The results, code, and factsheet should be submitted via the [google form](https://docs.google.com/forms/d/e/1FAIpQLSduZNcb6M-e_ROEnATRJ7e58ChUrLgrQ7iSmS6ysoON3wHZqg/viewform?usp=sf_link)
+
 
 ## Toolkit
 We also provide a Python toolkit which includes the necessary data loading and 
@@ -150,6 +168,10 @@ evaluation scripts. The toolkit contains the following modules.
       the RGB images Zurich RAW to RGB mapping dataset. This can be used along with SyntheticBurst dataset to generate synthetic bursts for training.  	
     * [synthetic_burst_val_set](datasets/synthetic_burst_val_set.py) can be used to load 
       the pre-generated synthetic validation set.
+    * [synthetic_burst_test_set](datasets/synthetic_burst_test_set.py) can be used to load 
+      the pre-generated synthetic test set.
+    * [realworld_burst_test_set](datasets/realworld_burst_test_set.py) can be used to load 
+      the real world bursts for track 2 test set.
     * [burstsr_dataset](datasets/burstsr_dataset.py) provides the BurstSRDataset class which can be used to load the RAW bursts and high-resolution ground truths
    from the pre-processed BurstSR dataset.
 * [scripts](scripts): Includes useful example scripts.
@@ -163,6 +185,12 @@ evaluation scripts. The toolkit contains the following modules.
     * [save_results_synburst_val](scripts/save_results_synburst_val.py) provides an example
       on how to save the results on [SyntheticBurstVal](datasets/synthetic_burst_val_set.py) 
       dataset for submission on the evaluation server.
+    * [save_results_synburst_test](scripts/save_results_synburst_test.py) provides an example
+      on how to save the results on [SyntheticBurstTest](datasets/synthetic_burst_test_set.py) 
+      dataset for the final submission.
+    * [save_results_realworld_test](scripts/save_results_realworld_test.py) provides an example
+      on how to save the results on [RealWorldBurstTest](datasets/realworld_burst_test_set.py) 
+      dataset for the final submission.
     * [visualize_synburst_results](scripts/visualize_synburst_results.py) Visualize generated results on the synthetic burst 
   validation set.
     
@@ -179,6 +207,14 @@ We provide the following data as part of the challenge.
 **Synthetic validation set:** The official validation set for track 1. The dataset contains 100 synthetic bursts, each containing 
 14 RAW images of 256x256 resolution. The synthetic bursts are generated from the RGB Canon images from the validation split of the BurstSR dataset. 
 The dataset can be downloaded from [here](https://data.vision.ee.ethz.ch/bhatg/synburst_val_2022.zip).
+
+**Synthetic test set:** The official test set for track 1. The dataset contains 92 synthetic bursts, each containing 
+14 RAW images of 256x256 resolution. The synthetic bursts are generated from the RGB Canon images from the test split of the BurstSR dataset. 
+The dataset can be downloaded from [here](https://data.vision.ee.ethz.ch/bhatg/synburst_test_2022.zip).
+
+**Real world test set:** The official test set for track 2. The dataset contains 20 real world bursts, 
+each containing 14 RAW images of 256x256 resolution. The bursts are captured using a Samsung Galaxy S8 smartphone camera.
+The dataset can be downloaded from [here](https://data.vision.ee.ethz.ch/bhatg/realworld_test_2022.zip).
 
 **BurstSR train and validation set (pre-processed):** The dataset has been split into 10 parts and can be downloaded and unpacked using the 
 [download_burstsr_dataset.py](scripts/download_burstsr_dataset.py) script. In case of issues with the script, the download links 
